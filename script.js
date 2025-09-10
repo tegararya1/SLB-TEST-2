@@ -313,7 +313,7 @@ function goToLaporan(){
   const btn = document.getElementById("btnLaporan");
   if(currentStep === 6){
     currentStep = 1;
-    btn.innerHTML = "📊 Cek Laporan"; 
+    btn.innerHTML = "📊 Riwayat Data Sensor"; 
   } else {
     currentStep = 6;
     btn.innerHTML = "🔙 Kembali"; 
@@ -514,3 +514,4 @@ function closeWarningModal(){ closeModal('modalWarning'); }
 
 // INIT
 renderStep();
+
