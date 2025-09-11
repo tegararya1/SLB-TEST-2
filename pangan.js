@@ -158,7 +158,7 @@ if(currentStep === 1){
     stepContent.innerHTML = `
       <div class="bg-white p-6 rounded-2xl shadow-md relative">
         <button onclick="goBackKambing()" class="absolute top-3 right-3 bg-gray-600 text-white px-4 py-2 rounded-lg">Kembali ke Pilih Kambing</button>
-        <h2 class="text-lg font-semibold mb-4">Laporan Semua Kambing</h2>
+        <h2 class="text-lg font-semibold mb-4">Riwayat</h2>
         <div class="mb-4 text-left">
           <label class="font-medium">Lihat history tanggal:</label>
           <input type="date" id="historyDateAll" value="${currentDateKey}" class="ml-2 border p-1 rounded"
@@ -209,7 +209,7 @@ function goToLaporanSemua(){
   const btn = document.getElementById("btnLaporanPangan");
   if(currentStep === 4){
     currentStep = 1; 
-    btn.innerHTML = "📊 Cek Laporan Semua Kambing";
+    btn.innerHTML = "📊 Riwayat Data Pangan";
   } else {
     currentStep = 4; 
     btn.innerHTML = "🔙 Kembali";
@@ -333,5 +333,6 @@ function doHapusLaporan(){
     hapusLaporanIndex=null;
   }
 }
+
 
 renderStep();
